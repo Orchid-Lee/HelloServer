@@ -1,0 +1,20 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.31.6”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.c
+D:\Leo\C++\CPlusPlus\HelloServer\HelloServer\main.c(36,32): warning : conversion from 'int' to 'uint16_t' {aka 'short unsigned int'} may change value [-Wconversion]
+D:\Leo\C++\CPlusPlus\HelloServer\HelloServer\main.c(36,32): warning :    36 |     serv_addr.sin_port = htons(atoi(argv[1]));
+D:\Leo\C++\CPlusPlus\HelloServer\HelloServer\main.c(36,32): warning :       |                                ^~~~~~~~~~~~~
+D:\Leo\C++\CPlusPlus\HelloServer\HelloServer\main.c(38,25): warning : passing argument 2 of 'bind' from incompatible pointer type [-Wincompatible-pointer-types]
+D:\Leo\C++\CPlusPlus\HelloServer\HelloServer\main.c(38,25): warning :    38 |     if (bind(serv_sock, &serv_addr, sizeof(serv_addr)) == -1)
+D:\Leo\C++\CPlusPlus\HelloServer\HelloServer\main.c(38,25): warning :       |                         ^~~~~~~~~~
+D:\Leo\C++\CPlusPlus\HelloServer\HelloServer\main.c(38,25): warning :       |                         |
+D:\Leo\C++\CPlusPlus\HelloServer\HelloServer\main.c(38,25): warning :       |                         struct sockaddr_in *
+/usr/include/x86_64-linux-gnu/sys/socket.h(112,49): message : expected 'const struct sockaddr *' but argument is of type 'struct sockaddr_in *'
+/usr/include/x86_64-linux-gnu/sys/socket.h(112,49): message :   112 | extern int bind (int __fd, __CONST_SOCKADDR_ARG __addr, socklen_t __len)
+/usr/include/x86_64-linux-gnu/sys/socket.h(112,49): message :       |                                                 ^
+  正在链接对象
+  HelloServer.vcxproj -> D:\Leo\C++\CPlusPlus\HelloServer\HelloServer\bin\x64\Debug\HelloServer.out
